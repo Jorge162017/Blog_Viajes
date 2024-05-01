@@ -1,8 +1,6 @@
-import React from 'react';
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import './login.css';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -11,7 +9,7 @@ const Login = () => {
     const navigate = useNavigate();
   const [correo_electronico, setCorreo] = useState('');
   const [contraseña, setContrasena] = useState('');
-  const [error, setError] = useState('');
+  const [error] = useState('');
 
   // Esta función podría ser parte de tu función handleLogin
 // Suponiendo que estás en el contexto del componente Login
@@ -88,9 +86,6 @@ const generateClientSideToken = () => {
           <button className='button' type='submit'>
             Login
           </button>
-          <div className='register-link'>
-            <p>Don't have an account? <a href='./Register'>Register</a></p>
-          </div>
         </form>
       </div>
     </div>

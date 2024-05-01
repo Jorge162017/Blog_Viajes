@@ -1,7 +1,7 @@
 //const { useEffect, useState } = React;
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 
 // Header.js
 function Header() {
@@ -84,5 +84,15 @@ function Home() {
       </div>
     );
   }
+
+  Card.propTypes = {
+    post: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+    }).isRequired
+  };
 
 export default Home;

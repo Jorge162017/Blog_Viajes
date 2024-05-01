@@ -64,4 +64,4 @@ ProtectedRoute.propTypes = {
     children: PropTypes.node.isRequired
   };
 
-export default AuthContext;
+export default AuthContext; 
