@@ -1,5 +1,5 @@
 //const { useEffect, useState } = React;
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <h1 class="navbar-brand" href="#">BLOG DE VIAJES</h1>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <h1 className="navbar-brand" href="#">BLOG DE VIAJES</h1>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form className="form-inline my-2 my-lg-0">
             <Link to="/login" className="nav-link">
-            <button class="btn btn-success" type="submit">Log In</button>
+            <button className="btn btn-success" type="submit">Log In</button>
             </Link>
           </form>
         </div>
